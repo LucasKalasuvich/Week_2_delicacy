@@ -4,6 +4,8 @@ import img1 from "../assets/salmon1.png";
 import img2 from "../assets/dish31.png";
 
 const Detail = () => {
+
+    
     return <div className="detail_wrapper">
         <div className="detail_flex_bottom">
             <div className="detail_col_bottom">

@@ -4,7 +4,7 @@ import Home from "./components/Home/Home";
 // import Favorite from "./components/Favorite/Favorite";
 import Detail from "./components/Detail/Detail";
 import "./app.scss";
-import { apiURL } from "./components/Domain/api";
+import { callAPI } from "./components/Domain/api";
 
 function App() {
   const [currentCategory, setCurrentCategory] = useState("Beef");
@@ -13,7 +13,7 @@ function App() {
   useEffect(() => {
     const fetchMealData = async () => {
       try {
-        const response = await fetch(`${apiURL}/search.php?s=${currentCategory}`);
+        const response = await fetch(`${callAPI}/search.php?s=${currentCategory}`);
         if (!res.ok) throw new Error("Something went wrong!");
         const data = await response.json();
         fetchMealData(data.meals); // Assuming the API returns a 'meals' property

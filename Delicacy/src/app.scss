@@ -103,6 +103,8 @@ body {
   padding-left: 4rem;
   overflow: scroll;
   gap: 100px;
+  position: absolute;
+  gap: 682px;
 }
 
 .home_content::-webkit-scrollbar {
@@ -114,7 +116,7 @@ body {
 }
 
 .home_img {
-  margin-left: -300px;
+  margin-left: -900px;
   margin-top: 80px;
 }
 
@@ -189,7 +191,7 @@ button {
 .home_col_bottom {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 612px;
 }
 
 .home_card_bottom {
